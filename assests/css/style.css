@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    ::after,
+    ::before,
+    * {
+        @apply box-border;
+    }
+    html {
+        @apply scroll-smooth
+    }
+    body {
+        @apply m-0 p-0 font-roboto 
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply m-0 font-jungleFever
+    }
+    h1 {
+        @apply text-80 leading-95.36
+    }
+    h2 {
+        @apply text-48 leading-57.22 
+    }
+    h3 {
+        @apply text-24 leading-28.61
+    }
+    .title-white h1, .title-white h2, .title-white h3, .title-white h4, .title-white h5, .title-white h6 {
+        @apply text-white
+    }
+    .title-red h1, .title-red h2, .title-red h3, .title-red h4, .title-red h5, .title-red h6 {
+        @apply text-primary_red
+    }
+    .content-white p{
+        @apply text-white
+    }
+    a.link-white {
+        @apply text-white
+    }
+    a.link-yellow {
+        @apply text-yellow
+    }
+    .content-gray p {
+        @apply text-gray
+    }
+     p {
+        @apply font-roboto text-16 leading-26 text-gray
+    }
+    a {
+        @apply transition-all duration-300 ease-in-out cursor-pointer text-16 leading-26 font-roboto font-bold
+    }
+}
+
+@layer components {
+    .btn {
+        @apply py-10 px-28 font-roboto font-bold text-16 leading-26 text-primary_red shadow-shadow-red border-2 border-primary_red rounded-[23px] text-center
+    }
+    .btn-yellow {
+        @apply bg-yellow 
+    }
+    .btn-white {
+        @apply bg-white
+    }
+}
+@font-face {
+    font-family: "JungleFever";
+    src: url(../assets/fonts/JungleFever.ttf);
+}
