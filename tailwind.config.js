@@ -232,11 +232,13 @@ module.exports = {
       mdscreen3: { 'max': '991px' },
       mdscreen2: { 'min': '990px' },
       lgscreen: { 'max': '1023px' },
+      lgscreen_min: { 'min': '1024px' },
       xlscreen: { 'max': '1199px' },
       xlscreen1: { 'min': '1200px' },
       xlscreen2: { 'max': '1279px' },
       // Desktop First
       xl: { 'min': '1280px' },
+      small_dektop_min: {'min': '1400px'},
       small_desktop1: { 'max': '1400px' },
       small_desktop: { 'min': '1366px' },
       desktop: { 'max': '1440px' },
