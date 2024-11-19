@@ -35,7 +35,9 @@ module.exports = {
       backgroundImage: {
         bg_gradient_orange: "linear-gradient(90deg, rgba(240, 103, 0, 0) -10%, #F06700 100%)",
         bg_gradient_red: "linear-gradient(90deg, rgba(47, 20, 9, 0) -10%, #2F1409 100%)",
-        bg_gradient_green: "linear-gradient(90deg, rgba(69, 123, 0, 0) -10%, #457B00 100%)"
+        bg_gradient_green: "linear-gradient(90deg, rgba(69, 123, 0, 0) -10%, #457B00 100%)",
+        bg_gradient_green_mobile: "linear-gradient(90deg, rgba(69, 123, 0, 0) -50%, #457B00 100%)",
+        bg_gradient_orange_mobile: "linear-gradient(90deg, rgba(240, 103, 0, 0) -60%, #F06700 100%)",
       },
       letterSpacing: {
         normal: "0",
@@ -235,10 +237,11 @@ module.exports = {
       xlscreen2: { 'max': '1279px' },
       // Desktop First
       xl: { 'min': '1280px' },
-      small_desktop1: { 'max': '1365px' },
+      small_desktop1: { 'max': '1400px' },
       small_desktop: { 'min': '1366px' },
       desktop: { 'max': '1440px' },
       large_desktop: { 'max': '1512px' },
+      large_desktop2: { 'min': '1513px' },
       midlarge_desktop: { 'min': '1600px' },
       extlarge_desktop: { 'min': '1921px' },
   }
