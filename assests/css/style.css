@@ -39,7 +39,7 @@
         @apply text-24 leading-28.61
     }
     p, span {
-        @apply font-roboto text-16 leading-26 text-gray
+        @apply font-roboto text-16 leading-26 text-gray font-normal
     }
     a {
         @apply transition-all duration-300 ease-in-out cursor-pointer text-16 leading-26 font-roboto font-bold
