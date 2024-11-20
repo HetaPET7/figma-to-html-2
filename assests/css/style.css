@@ -30,7 +30,7 @@
         @apply m-0 font-jungleFever font-normal
     }
     h1 {
-        @apply text-80 leading-95.36
+        @apply small_desktop2_min:text-80 small_desktop2_min:leading-95.36 lgscreen_min:text-[68px] lgscreen_min:leading-76 mdscreen4:text-48 mdscreen4:leading-57.22 text-[34px] leading-40
     }
     h2 {
         @apply text-48 small_desktop1:text-38 leading-57.22 lgscreen:!text-28 lgscreen:!leading-32
@@ -133,7 +133,7 @@
         @apply left-0;
       }
     .hero-section .owl-nav {
-        @apply absolute w-full flex justify-center items-center gap-x-55 bottom-[55px]
+        @apply absolute w-full flex justify-center mdscreen3:justify-between mdscreen3:px-16 items-center gap-x-55 bottom-[55px]
     }
     .owl-nav span , .owl-dots {
         @apply hidden
@@ -153,9 +153,9 @@
     #techyscouts-logo {
         @apply inline-block fill-white h-20 w-[140px] align-middle stroke-white
     }
-    .product-collection-slider .owl-carousel{
+    /* .product-collection-slider .owl-carousel{
         @apply px-88 mdscreen3:px-0
-    }
+    } */
     .product-collection-slider .owl-carousel .owl-nav {
         @apply absolute w-full top-2/4 left-0 !flex justify-between
     }
@@ -166,10 +166,13 @@
         @apply pb-4
     }
     .year-round-slider .owl-carousel .owl-stage-outer {
-        @apply ml-[123px]
+        @apply ml-[123px] lgscreen:ml-0
+    }
+    .year-round-slider .owl-carousel .owl-item {
+        @apply max-w-[550px] w-full lgscreen:max-w-full
     }
     .year-round-slider .owl-carousel .owl-nav {
-        @apply !flex flex-col gap-y-28 w-48 absolute top-2/4 -translate-y-2/4
+        @apply !flex flex-col gap-y-28 w-48 absolute top-2/4 -translate-y-2/4 lgscreen:flex-row lgscreen:w-full lgscreen:justify-between
     }
     .faq-section .faq-question.faq-active svg {
         @apply rotate-[180deg]
@@ -177,15 +180,26 @@
     .faq-section .faq-question svg {
         @apply lgscreen:w-[13px] lgscreen:h-[13px]
     }
+    .start-journey .owl-nav {
+        @apply flex justify-between absolute w-full top-1/4 left-0
+    }
+    .start-journey .owl-carousel  {
+        @apply px-80 xlscreen2:px-30 mdscreen:!px-16
+    }
+    .start-journey .owl-carousel .owl-dots {
+        @apply !hidden
+    }
     /* header.mobile-menu-open svg, header.mobile-menu-open svg path{
         @apply fill-primary_red
     } */
 }
 
+@media only screen and (min-width: 1024px) {
 
-.year-round-slider .owl-carousel {
-    max-width: calc(100% - 515px);
-    width: 100%;
+    .year-round-slider .owl-carousel {
+        max-width: calc(100% - 515px);
+        width: 100%;
+    }
 }
 
   header.scrolled {
