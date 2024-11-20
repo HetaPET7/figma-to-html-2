@@ -196,7 +196,7 @@
 
 <section class="product-collection-slider">
     <div class="container_fluid pt-100 pb-140 mdscreen3:py-60">
-        <div class="px-45 mdscreen3:px-0 flex justify-between items-center mdscreen:flex-col mdscreen:items-start mdscreen:gap-y-3">
+        <div class="px-45 mdscreen3:px-0 flex justify-between items-center mdscreen:flex-col mdscreen:gap-y-3">
             <div class="title-red">
                 <h2>Feed the Snack Beast!</h2>
             </div>
@@ -538,7 +538,7 @@
 </div>
 
 <section class="map-section">
-    <div class="flex justify-center pt-14 mdscreen:px-16">
+    <div class="flex justify-center pt-14 px-16">
         <img src="/assests/Images/world-map-cartoon.png" alt="world-map-cartoon" />
     </div>
 </section>
@@ -834,7 +834,10 @@ AOS.init({
     smartSpeed: 800,
     mouseDrag: false,
     animateIn: 'fadeIn',
-    animateOut: 'fadeOut' ,
+    animateOut: 'fadeOut',
+    autoplay: true,  
+    autoplaySpeed: 1000, 
+    stopOnHover: false ,
     responsive:{
         0:{
             items:1

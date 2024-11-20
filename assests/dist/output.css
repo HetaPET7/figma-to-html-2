@@ -1355,6 +1355,11 @@ input:focus-visible {
   padding: 0px;
 }
 
+.px-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 .px-28 {
   padding-left: 28px;
   padding-right: 28px;
@@ -1521,17 +1526,13 @@ input:focus-visible {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.ease-in {
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-}
-
 .mobile-menu.open {
   left: 0px;
 }
 
 .hero-section .owl-nav {
   position: absolute;
-  bottom: 55px;
+  bottom: 79px;
   display: flex;
   width: 100%;
   align-items: center;
@@ -1557,20 +1558,14 @@ input:focus-visible {
   background-color: rgb(169 56 0 / var(--tw-bg-opacity)) !important;
 }
 
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
+@keyframes pulse {
   50% {
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
+    opacity: .5;
   }
 }
 
 .owl-carousel .owl-nav button:hover {
-  animation: bounce 1s infinite;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 @media (max-width: 767px) {
@@ -2113,11 +2108,6 @@ header.scrolled {
   .mdscreen\:\!px-16 {
     padding-left: 16px !important;
     padding-right: 16px !important;
-  }
-
-  .mdscreen\:px-16 {
-    padding-left: 16px;
-    padding-right: 16px;
   }
 
   .mdscreen\:pb-40 {

@@ -133,13 +133,13 @@
         @apply left-0;
       }
     .hero-section .owl-nav {
-        @apply absolute w-full flex justify-center mdscreen3:justify-between mdscreen3:px-16 items-center gap-x-55 bottom-[55px]
+        @apply absolute w-full flex justify-center mdscreen3:justify-between mdscreen3:px-16 items-center gap-x-55 bottom-[79px]
     }
     .owl-nav span , .owl-dots {
         @apply hidden
     }
     .owl-carousel .owl-nav button {
-        @apply w-48 h-48 mdscreen:w-[34px] mdscreen:h-[34px] rounded-[100%] !bg-primary_red relative hover:animate-bounce
+        @apply w-48 h-48 mdscreen:w-[34px] mdscreen:h-[34px] rounded-[100%] !bg-primary_red relative hover:animate-pulse
     }
     .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
         @apply after:w-20 after:h-16 mdscreen:after:w-[15px] mdscreen:after:h-[12px] mdscreen:after:bg-cover mdscreen:after:bg-no-repeat after:block after:absolute after:top-2/4 after:-translate-x-2/4 after:-translate-y-2/4 after:left-2/4 after:bg-[url(/assests/Images/arrow.svg)]
