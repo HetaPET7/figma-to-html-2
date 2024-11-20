@@ -919,12 +919,15 @@ window.addEventListener('scroll', handleScroll);
 //faq
 
 $(document).ready(function() {
+  $(".faq-question:first").next(".faq-answer").slideDown();
+  $(".faq-question:first").addClass("faq-active");
+
   $(".faq-question").click(function() {
     $(this).next(".faq-answer").slideToggle();
     $(this).toggleClass("faq-active");
-
   });
 });
+
 
     // Get the elements
     const menuIcon = document.querySelector('.menu-icon');

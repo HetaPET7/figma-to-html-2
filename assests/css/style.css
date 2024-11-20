@@ -175,10 +175,10 @@
         @apply !flex flex-col gap-y-28 w-48 absolute top-2/4 -translate-y-2/4 lgscreen:flex-row lgscreen:w-full lgscreen:justify-between
     }
     .faq-section .faq-question.faq-active svg {
-        @apply rotate-[180deg]
+        @apply rotate-[180deg] transition-all duration-300 ease-in-out
     }
     .faq-section .faq-question svg {
-        @apply lgscreen:w-[13px] lgscreen:h-[13px]
+        @apply lgscreen:w-[13px] lgscreen:h-[13px] transition-all duration-300 ease-in-out
     }
     .start-journey .owl-nav {
         @apply flex justify-between absolute w-full top-1/4 left-0
