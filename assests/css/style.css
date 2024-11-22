@@ -77,10 +77,10 @@
     span.price {
         @apply font-bold
     }
-    .container_fluid {
+    .container-fluid {
         @apply px-55 xlscreen2:px-30 mdscreen:!px-16 w-full
     }
-    .container_large {
+    .container-large {
         @apply px-100 xlscreen2:px-30 mdscreen:!px-16 w-full
     }
     .annoncementbar p, .annoncementbar span {
@@ -110,7 +110,6 @@
       *::-webkit-scrollbar-thumb {
         @apply bg-primary_red
       }
-      
 }
 
 @layer components {
@@ -135,11 +134,11 @@
     .hero-section .owl-nav {
         @apply absolute w-full flex justify-center mdscreen3:justify-between mdscreen3:px-16 items-center gap-x-55 bottom-[79px]
     }
-    .owl-nav span , .owl-dots {
-        @apply hidden
+    .owl-carousel .owl-nav span , .owl-carousel .owl-dots {
+        @apply !hidden
     }
     .owl-carousel .owl-nav button {
-        @apply w-48 h-48 mdscreen:w-[34px] mdscreen:h-[34px] rounded-[100%] !bg-primary_red relative hover:animate-pulse
+        @apply w-48 h-48 mdscreen:w-[34px] mdscreen:h-[34px] rounded-[100%] !bg-primary_red relative hover:animate-pulse hover:!bg-orange
     }
     .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
         @apply after:w-20 after:h-16 mdscreen:after:w-[15px] mdscreen:after:h-[12px] mdscreen:after:bg-cover mdscreen:after:bg-no-repeat after:block after:absolute after:top-2/4 after:-translate-x-2/4 after:-translate-y-2/4 after:left-2/4 after:bg-[url(../Images/arrow.svg)]
@@ -147,9 +146,7 @@
     .owl-carousel .owl-nav button.owl-next {
         @apply after:rotate-180
     }
-    header.scrolled {
-        @apply top-0 transition-[top] duration-[0.5s] bg-bg_gradient_orange bg-yellow
-    }
+    
     #techyscouts-logo {
         @apply inline-block fill-white h-20 w-[140px] align-middle stroke-white
     }
@@ -166,11 +163,11 @@
         @apply pb-4
     }
     .year-round-slider .owl-carousel .owl-stage-outer {
-        @apply ml-[123px] lgscreen:ml-0
+        @apply ml-[75px] lgscreen:ml-0
     }
-    .year-round-slider .owl-carousel .owl-item {
+    /* .year-round-slider .owl-carousel .owl-item {
         @apply max-w-[550px] w-full lgscreen:max-w-full
-    }
+    } */
     .year-round-slider .owl-carousel .owl-nav {
         @apply !flex flex-col gap-y-28 w-48 absolute top-2/4 -translate-y-2/4 lgscreen:flex-row lgscreen:w-full lgscreen:justify-between
     }
@@ -189,17 +186,12 @@
     .start-journey .owl-carousel .owl-dots {
         @apply !hidden
     }
+    .year-round-slider .owl-carousel {
+        @apply lgscreen_min:w-2/3 w-full
+    }
     /* header.mobile-menu-open svg, header.mobile-menu-open svg path{
         @apply fill-primary_red
     } */
-}
-
-@media only screen and (min-width: 1024px) {
-
-    .year-round-slider .owl-carousel {
-        max-width: calc(100% - 515px);
-        width: 100%;
-    }
 }
 
   header.scrolled {
@@ -274,3 +266,6 @@
   }
 
 
+  header.scrolled {
+    @apply top-0 transition-[top] duration-[0.5s] bg-bg_gradient_orange bg-yellow
+    }
